@@ -55,7 +55,7 @@ def send_telegram_notify(item: dict):
     bot = TeleBot(os.environ['TG_BOT_TOKEN'], parse_mode='HTML')
     bot.send_message(int(os.environ['USER_ID']),
                      (f'Uusi ilmoitus torilla!\n\n'
-                      f'<b>{item["title"]}</b>\n'
+                      f'<b><a href="{item["url"]}">{item["title"]}</a></b>\n'
                       f'{item["description"]}\n'
                       f'Hinta: {item["price"]} €'))
 
