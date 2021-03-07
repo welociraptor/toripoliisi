@@ -1,0 +1,4 @@
+beautifulsoup4~=4.9.3
+google-cloud-storage~=1.36.1
+pyTelegramBotAPI~=3.7.6
+requests~=2.25.1
